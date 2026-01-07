@@ -24,27 +24,26 @@ const cardData = [
     title: "Santander",
     subtitle: "Atuamos no time global de pagamentos na america latina.",
     imageUrl: "https://images.unsplash.com/photo-1563986768609-322da13575f3",
-    icon: Globe,
-    url: "https://developer.santander.com.br"
+    url: "https://developer.santander.com.br",
+    icon: Globe
   },
   {
     id: 2,
     title: "Q2 Bank",
-    subtitle: "Construimos soluções para maquinas POS...",
+    subtitle: "Construimos soluções para maquinas POS e meios de pagamento.",
     imageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
-    icon: Smartphone,
-    url: "https://www.q2.com"
+    url: "https://www.q2.com",
+    icon: Smartphone
   },
   {
     id: 3,
     title: "Opah IT",
-    subtitle: "Time de desenvolvimento...",
+    subtitle: "Time de desenvolvimento e transações e segurança.",
     imageUrl: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62",
-    icon: Code2,
-    url: "https://opah.com.br"
+    url: "https://opah.com.br",
+    icon: Code2
   }
 ];
-
 
 const techStacks = [
   { name: "Kotlin", Icon: Cpu },
@@ -167,7 +166,7 @@ const ProjectCard = ({
       <div className="p-6 flex flex-col grow text-left">
         <h2 className="text-xl font-bold text-white mb-2">{title}</h2>
         <p className="text-gray-400 text-sm mb-6 leading-relaxed grow">
-          {subtitle}
+          <h1>{subtitle}</h1>
         </p>
 
         <div className="w-full py-3 px-4 border border-indigo-500/30 bg-indigo-500/5 group-hover:bg-indigo-600 text-white font-bold rounded-xl transition-all duration-300 flex items-center justify-center gap-2">
@@ -209,7 +208,7 @@ const Home = () => {
             <div className="mb-20 text-center md:text-left">
               <h2 className="text-indigo-500 font-bold uppercase tracking-widest text-sm mb-4">Portfolio</h2>
               <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter">Projetos em <span className="text-slate-500 underline decoration-indigo-500/50">Destaque</span></h1>
-              <p className="text-slate-400 text-lg max-w-2xl leading-relaxed">Soluções tecnológicas robustas desenvolvidas para o ecossistema financeiro e enterprise.</p>
+              <p className="text-slate-400 text-xl max-w-2xl leading-relaxed">Soluções tecnológicas robustas desenvolvidas para o ecossistema financeiro e enterprise.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {cardData.map((card) => (
@@ -348,17 +347,16 @@ const Home = () => {
           <div>
             <h4 className="text-white font-bold mb-6">Navegação</h4>
             <ul className="space-y-4 text-slate-500 text-sm">
-              <li><button onClick={() => setActiveTab('home')} className="hover:text-indigo-400 transition-colors">Início</button></li>
-              <li><button onClick={() => setActiveTab('projects')} className="hover:text-indigo-400 transition-colors">Projetos</button></li>
-              <li><button onClick={() => setActiveTab('stacks')} className="hover:text-indigo-400 transition-colors">Tecnologias</button></li>
+              <li><button onClick={() => setActiveTab('home')} className="hover:text-indigo-400 transition-colors cursor-pointer">Início</button></li>
+              <li><button onClick={() => setActiveTab('projects')} className="hover:text-indigo-400 transition-colors cursor-pointer">Projetos</button></li>
+              <li><button onClick={() => setActiveTab('stacks')} className="hover:text-indigo-400 transition-colors cursor-pointer">Tecnologias</button></li>
             </ul>
           </div>
           <div>
             <h4 className="text-white font-bold mb-6">Redes</h4>
             <ul className="space-y-4 text-slate-500 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">GitHub</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/qianxu-app" className="hover:text-white transition-colors">LinkedIn</a></li>
+              <li><a href="https://medium.com/@rcardo.muniz.devv" className="hover:text-white transition-colors">Medium</a></li>
             </ul>
           </div>
         </div>
