@@ -151,7 +151,6 @@ const ProjectCard = ({
     className="group block"
   >
     <div className="bg-gray-900 rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-indigo-500/10 flex flex-col h-full border border-gray-800">
-      
       <div className="relative h-56 w-full overflow-hidden p-4">
         <img
           src={imageUrl}
@@ -207,8 +206,8 @@ const Home = () => {
           <section className="w-full max-w-7xl mx-auto pt-40 pb-24 px-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <div className="mb-20 text-center md:text-left">
               <h2 className="text-indigo-500 font-bold uppercase tracking-widest text-sm mb-4">Portfolio</h2>
-              <h1 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter">Projetos em <span className="text-slate-500 underline decoration-indigo-500/50">Destaque</span></h1>
-              <p className="text-slate-400 text-xl max-w-2xl leading-relaxed">Soluções tecnológicas robustas desenvolvidas para o ecossistema financeiro e enterprise.</p>
+              <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-wide">Projetos em <span className="text-slate-500 underline decoration-indigo-500/50">Destaque</span></h1>
+              <p className="text-slate-400 text-xl max-w-2xl mt-8 leading-relaxed">Soluções tecnológicas robustas desenvolvidas para o ecossistema financeiro e enterprise.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {cardData.map((card) => (
@@ -249,7 +248,7 @@ const Home = () => {
                   Innovation.
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-12 font-normal">
+              <p className="leading-relaxed text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto mb-12 font-normal">
                 Transformamos desafios complexos em produtos digitais escaláveis. Simples, rápido e eficiente.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -257,7 +256,7 @@ const Home = () => {
                   onClick={() => setActiveTab('projects')}
                   className="w-full sm:w-auto font-medium px-6 py-3 bg-white cursor-pointer text-slate-950 hover:bg-indigo-500 hover:text-white rounded-xl transition-all flex items-center justify-center gap-3 group shadow-xl shadow-white/5"
                 >
-                  Ver Cases <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+                  Ver Cases <ArrowRight size={22} className="group-hover:translate-x-1.5 transition-transform" />
                 </button>
                 <button 
                   onClick={() => setActiveTab('stacks')}
