@@ -93,21 +93,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ Icon, title, description }) =
 export const HomeView = () => (
   
   <div className="min-h-screen bg-slate-950 flex flex-col text-center space-y-8 py-12 px-6">
-    {/* Hero Section */}
-    <h1 className="text-5xl md:text-7xl mt-10 font-extrabold tracking-tight text-white max-w-4xl leading-[1.1] mx-auto text-center">
-      Construindo o futuro da{' '}
-      <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 via-purple-400 to-pink-400">
-        Experiência Digital
-      </span>
-    </h1>
-
-    <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-      Resolvedores de problemas por essência, somos apaixonados por tech.
-      Construímos mais em menos.
-    </p>
-
-    {/* Main Container Layout */}
-    <div className="w-full mt-24 max-w-5xl mx-auto rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl overflow-hidden transition-transform hover:scale-[1.01] duration-500">
+    
+    <div className="w-full mt-24 max-w-5xl mx-auto rounded-2xl border
+    border-slate-200 bg-white p-4 shadow-2xl overflow-hidden transition-transform hover:scale-[1.01] duration-500">
+    
       {/* Browser-style Header */}
       <div className="flex items-center gap-2 mb-4 px-2">
         <div className="w-3 h-3 rounded-full bg-red-400" />
