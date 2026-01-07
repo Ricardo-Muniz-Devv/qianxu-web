@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 import type { LucideIcon } from 'lucide-react';
-import Logo from '../assets/ic-top.svg'
+import Logo from '../assets/ic-nav.svg'
 
 const cardData = [
   {
@@ -79,8 +79,8 @@ const Navbar = ({ activeTab, setActiveTab }: { activeTab: string, setActiveTab: 
           className="flex items-center gap-2 cursor-pointer group"
           onClick={() => setActiveTab('home')}
         >
-          <div className="w-8 h-8 bg-linear-to-brrounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform">
-            <img src={ Logo } className="text-white p-0 rounded-lg" />
+          <div className="w-12 h-12 pl-1 bg-linear-to-brrounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform">
+            <img src={ Logo } className="text-white pl-1 rounded-lg" />
           </div>
           <span className="text-white font-bold text-xl tracking-tight ml-0.5">Qia<span className="text-indigo-400">nxu</span></span>
         </div>
@@ -242,7 +242,7 @@ const Home = () => {
               <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
                 <span className="text-indigo-400 text-xs font-bold uppercase tracking-[0.2em]">- Disponível para novos projetos -</span>
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white leading-[0.9] mb-8">
+              <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white leading-[0.9] mt-4 mb-8">
                 Design. Code.{' '}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 via-purple-400 to-pink-400">
                   Innovation.
@@ -256,7 +256,7 @@ const Home = () => {
                   onClick={() => setActiveTab('projects')}
                   className="w-full sm:w-auto font-medium px-6 py-3 bg-white cursor-pointer text-slate-950 hover:bg-indigo-500 hover:text-white rounded-xl transition-all flex items-center justify-center gap-3 group shadow-xl shadow-white/5"
                 >
-                  Ver Cases <ArrowRight size={22} className="group-hover:translate-x-1.5 transition-transform" />
+                  Ver Cases <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button 
                   onClick={() => setActiveTab('stacks')}
@@ -335,7 +335,7 @@ const Home = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 rounded-b-lg mb-6">
               <div className="w-10 h-10 bg-indigo-600 rounded-3xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <img src={Logo} className="text-white rounded-xl" />
+                <img src={Logo} className="text-white rounded-lg" />
               </div>
               <span className="text-white font-black text-2xl tracking-tighter ml-0.3">Qianxu</span>
             </div>
